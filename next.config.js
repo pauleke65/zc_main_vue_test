@@ -1,5 +1,7 @@
-module.exports = {
+const withHtml = require('@blunck/next-html')();
+module.exports = withHtml({
   reactStrictMode: true,
+
   eslint: {
     // allow production builds to successfully complete even if
     // the project has ESLint errors.
@@ -13,4 +15,4 @@ module.exports = {
       }
     ];
   }
-};
+});

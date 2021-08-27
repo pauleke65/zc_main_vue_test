@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect } from 'react';
 import { URLContext } from '../pages';
+import TestPlugin from './VueComponents/vue-test-plugin/TestPlugin';
 
 import styles from '../styles/PluginContent.module.css';
 
@@ -22,7 +23,11 @@ export const PluginContent = () => {
 
   return (
     <section className={styles.container}>
-      <div className="plugin-content">Loading...</div>
+      <div className="plugin-content">
+        <html>
+          <TestPlugin />
+        </html>
+      </div>
     </section>
   );
 };
